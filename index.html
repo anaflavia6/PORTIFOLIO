@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfólio de Ana Flávia Santana de Oliveira — Tecnologia, Administração e Experiências Digitais."
+    >
+
+    <meta
+        name="theme-color"
+        content="#050505"
+    >
+
+    <title>
+        Ana Flávia | Portfolio
+    </title>
+
+
+    <!-- =====================================================
+         FONTES
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Mono:wght@300;400;500&family=Dancing+Script:wght@600;700&family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/variables.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/reset.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/navbar.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/home.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/footer.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NOISE / TEXTURE
+    ====================================================== -->
+
+    <div
+        class="noise"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <nav
+            class="navbar"
+            aria-label="Navegação principal"
+        >
+
+            <!-- LOGO -->
+
+            <a
+                href="#home"
+                class="nav-logo"
+                aria-label="Ana Flávia — Página inicial"
+            >
+                AF
+            </a>
+
+
+            <!-- MENU -->
+
+            <ul
+                class="nav-links"
+                id="primary-navigation"
+            >
+
+                <li>
+                    <a
+                        href="#home"
+                        class="nav-link active"
+                        aria-current="page"
+                    >
+                        HOME
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="pages/trabalhos.html"
+                        class="nav-link"
+                    >
+                        WORK
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#about"
+                        class="nav-link"
+                    >
+                        ABOUT
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#services"
+                        class="nav-link"
+                    >
+                        SERVICES
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="pages/tecnologia.html"
+                        class="nav-link"
+                    >
+                        TECH LAB
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="pages/estudos.html"
+                        class="nav-link"
+                    >
+                        EDUCATION
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#contact"
+                        class="nav-link"
+                    >
+                        CONTACT
+                    </a>
+                </li>
+
+
+                <!-- START A PROJECT — mobile -->
+
+                <li class="nav-mobile-item">
+
+                    <a
+                        href="#contact"
+                        class="nav-start nav-start--mobile"
+                    >
+                        START A PROJECT
+                        <span>→</span>
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <!-- START A PROJECT — desktop -->
+
+            <a
+                href="#contact"
+                class="nav-start nav-start--desktop"
+            >
+                START A PROJECT
+                <span>→</span>
+            </a>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+             Primeira tela — peça editorial
+        ================================================== -->
+
+        <section
+            class="hero"
+            id="home"
+            data-lantern-scope
+            aria-label="Apresentação"
+        >
+
+
+            <!-- Fotografia integrada ao fundo preto -->
+
+            <div
+                class="hero-photo lantern-photo"
+                data-lantern
+            >
+
+                <img
+                    src="assets/images/profile/ana-home.jpg"
+                    alt="Ana Flávia Santana de Oliveira"
+                    class="photo-dark"
+                    fetchpriority="high"
+                >
+
+                <img
+                    src="assets/images/profile/ana-home.jpg"
+                    alt=""
+                    aria-hidden="true"
+                    class="photo-lit"
+                >
+
+                <div
+                    class="photo-light"
+                    aria-hidden="true"
+                ></div>
+
+            </div>
+
+
+            <!-- Título semântico -->
+
+            <h1 class="sr-only">
+                Ana Flávia Santana de Oliveira — Tecnologia, Administração e Experiências Digitais.
+            </h1>
+
+
+            <!-- Conteúdo principal -->
+
+            <div class="hero-content">
+
+                <p class="hero-eyebrow">
+
+                    <span class="hero-index">
+                        01
+                    </span>
+
+                    <span>
+                        WHO I AM
+                    </span>
+
+                </p>
+
+
+                <div class="hero-name">
+
+                    <span class="hero-name-word">
+                        ANA
+                    </span>
+
+                    <span class="hero-name-divider">
+
+                        <span
+                            class="hero-signature"
+                            aria-hidden="true"
+                        >
+                            AF
+                        </span>
+
+                        <span class="hero-meta">
+
+                            <span>
+                                Ana Flávia Santana de Oliveira
+                            </span>
+
+                            <span>
+                                Technology · Business · Digital Experiences
+                            </span>
+
+                        </span>
+
+                    </span>
+
+                    <span class="hero-name-word">
+                        FLÁVIA
+                    </span>
+
+                </div>
+
+
+                <a
+                    href="#contact"
+                    class="start-button"
+                >
+                    START A PROJECT
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- SCROLL -->
+
+            <a
+                href="#about"
+                class="scroll-indicator"
+                aria-label="Ir para About"
+            >
+
+                <span class="scroll-line">
+                    <span></span>
+                </span>
+
+                <span class="scroll-text">
+                    SCROLL
+                </span>
+
+            </a>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT
+             Foto à esquerda · Texto à direita
+        ================================================== -->
+
+        <section
+            class="about-section reveal-section"
+            id="about"
+            data-lantern-scope
+            aria-labelledby="about-title"
+        >
+
+            <p
+                class="section-index"
+                aria-hidden="true"
+            >
+                02 — ABOUT
+            </p>
+
+
+            <!-- FOTO COM LANTERNA -->
+
+            <div
+                class="about-photo lantern-photo"
+                data-lantern
+            >
+
+                <img
+                    src="assets/images/profile/ana-about.jpg"
+                    alt="Ana Flávia sentada diante do computador"
+                    class="photo-dark"
+                    loading="lazy"
+                >
+
+                <img
+                    src="assets/images/profile/ana-about.jpg"
+                    alt=""
+                    aria-hidden="true"
+                    class="photo-lit"
+                    loading="lazy"
+                >
+
+                <div
+                    class="photo-light"
+                    aria-hidden="true"
+                ></div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <h2
+                    class="about-title"
+                    id="about-title"
+                >
+
+                    <span class="about-line">
+                        Multidisciplinary
+                    </span>
+
+                    <span class="about-line">
+                        formation. Single clear
+                    </span>
+
+                    <span class="about-line">
+                        vision.
+                    </span>
+
+                </h2>
+
+
+                <p class="about-text">
+
+                    Minha trajetória reúne Administração,
+                    Tecnologia e experiências práticas em
+                    desenvolvimento e projetos digitais.
+
+                </p>
+
+
+                <p class="about-text">
+
+                    Busco transformar conhecimento técnico
+                    em soluções claras, funcionais e relevantes.
+
+                </p>
+
+
+                <a
+                    href="#contact"
+                    class="start-button"
+                >
+                    START A PROJECT
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SERVICES / AREAS
+             Imagem à esquerda · Conteúdo editorial à direita
+
+             IMPORTANTE:
+             Esta imagem NÃO possui efeito de lanterna.
+        ================================================== -->
+
+        <section
+            class="services-section reveal-section"
+            id="services"
+            aria-labelledby="services-title"
+        >
+
+            <p
+                class="section-index"
+                aria-hidden="true"
+            >
+                03 — SERVICES
+            </p>
+
+
+            <!-- FOTO NORMAL — SEM LANTERNA -->
+
+            <div class="services-photo">
+
+                <img
+                    src="assets/images/profile/ana-portfolio.jpg"
+                    alt="Ana Flávia trabalhando"
+                    class="services-photo-image"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="services-content">
+
+
+                <!-- TECHNOLOGY -->
+
+                <div class="service-block">
+
+                    <span class="service-number">
+                        01
+                    </span>
+
+                    <h3 class="service-title">
+                        TECHNOLOGY
+                    </h3>
+
+                    <p class="service-desc">
+                        Information Technology · Computer Science · Systems Development
+                    </p>
+
+                </div>
+
+
+                <!-- BUSINESS -->
+
+                <div class="service-block">
+
+                    <span class="service-number">
+                        02
+                    </span>
+
+                    <h3 class="service-title">
+                        BUSINESS
+                    </h3>
+
+                    <p class="service-desc">
+                        Business Administration · Strategic Vision · Market Orientation
+                    </p>
+
+                </div>
+
+
+                <!-- RESULT -->
+
+                <div class="service-block service-block--result">
+
+                    <span class="service-number service-number--result">
+                        RESULT
+                    </span>
+
+                    <h3 class="service-title">
+                        DIGITAL EXPERIENCES
+                    </h3>
+
+                    <p class="service-desc">
+                        Technology in service of real business impact.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <section
+            class="contact-section reveal-section"
+            id="contact"
+            aria-labelledby="contact-title"
+        >
+
+            <p
+                class="section-index"
+                aria-hidden="true"
+            >
+                04 — CONTACT
+            </p>
+
+
+            <p class="label">
+                // LET'S CONNECT
+            </p>
+
+
+            <h2 id="contact-title">
+
+                Let's build
+
+                <span>
+                    something meaningful.
+                </span>
+
+            </h2>
+
+
+            <a
+                href="mailto:anaflaviasan272004@gmail.com"
+                class="contact-email"
+            >
+
+                anaflaviasan272004@gmail.com
+
+                <span>
+                    ↗
+                </span>
+
+            </a>
+
+
+            <div class="contact-links">
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GITHUB ↗
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LINKEDIN ↗
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WHATSAPP ↗
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-top">
+
+            <div class="footer-logo">
+                AF
+            </div>
+
+            <div class="footer-description">
+
+                <p>
+                    Ana Flávia Santana de Oliveira
+                </p>
+
+                <p>
+                    Technology · Business · Digital Experiences
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 ANA FLÁVIA
+            </span>
+
+            <span>
+                DIGITAL CREATIVE
+            </span>
+
+            <span>
+                MADE WITH CODE ↗
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/navigation.js"></script>
+
+    <script src="js/cursor.js"></script>
+
+    <script src="js/animation.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

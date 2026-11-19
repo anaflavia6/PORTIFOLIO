@@ -1,0 +1,29 @@
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background: var(--color-accent);
+    color: #050505;
+}
+
+.container {
+    width: min(
+        calc(100% - 3rem),
+        var(--container-width)
+    );
+
+    margin-inline: auto;
+}
+
+.section {
+    padding-block: var(--spacing-xl);
+}
+
+.accent {
+    color: var(--color-accent);
+}

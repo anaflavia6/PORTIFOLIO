@@ -1,0 +1,441 @@
+/* =========================================================
+   PAGES
+   Sistema visual compartilhado das páginas internas
+   ========================================================= */
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.label {
+    margin-bottom: 18px;
+
+    color: var(--color-accent);
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   SECTION NUMBER
+   ========================================================= */
+
+.section-number {
+    position: absolute;
+
+    top: 120px;
+    left: 7vw;
+
+    z-index: 20;
+
+    color: var(--color-muted);
+
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.page-header {
+    position: relative;
+
+    padding: 170px 7vw 90px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   PAGE TITLE
+   ========================================================= */
+
+.page-title {
+    margin-top: 20px;
+
+    color: var(--color-text);
+
+    font-size: clamp(48px, 7vw, 110px);
+    font-weight: 400;
+
+    line-height: 0.95;
+
+    letter-spacing: -0.06em;
+}
+
+
+/* =========================================================
+   PAGE DESCRIPTION
+   ========================================================= */
+
+.page-description {
+    max-width: 580px;
+
+    margin-top: 30px;
+
+    color: var(--color-muted);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   PAGE BACK
+   Voltar para a Home
+   ========================================================= */
+
+.page-back {
+    display: inline-block;
+
+    margin-top: 40px;
+
+    color: var(--color-muted);
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    border-bottom:
+        1px solid var(--color-muted);
+
+    padding-bottom: 6px;
+
+    transition:
+        color var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+
+.page-back:hover {
+    color: var(--color-accent);
+
+    border-color: var(--color-accent);
+}
+
+
+/* =========================================================
+   PAGE SECTION
+   ========================================================= */
+
+.page-section {
+    padding: 110px 7vw;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.section-heading {
+    margin-bottom: 50px;
+
+    color: var(--color-text);
+
+    font-size: clamp(32px, 4vw, 56px);
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.04em;
+}
+
+
+/* =========================================================
+   CONTENT GRID
+   ========================================================= */
+
+.content-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   CONTENT CARD
+   ========================================================= */
+
+.content-card {
+    background: #0b0b0b;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.1);
+
+    padding: 35px;
+
+    transition:
+        transform var(--transition-normal),
+        border-color var(--transition-normal);
+}
+
+
+.content-card:hover {
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(215, 245, 0, 0.5);
+}
+
+
+/* =========================================================
+   CARD ELEMENTS
+   ========================================================= */
+
+.card-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--color-accent);
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.card-title {
+    color: var(--color-text);
+
+    font-size: 24px;
+    font-weight: 400;
+
+    letter-spacing: -0.02em;
+}
+
+
+.card-meta {
+    margin-top: 8px;
+
+    color: var(--color-muted);
+
+    font-size: 13px;
+}
+
+
+.card-status {
+    display: inline-block;
+
+    margin-top: 18px;
+
+    padding: 6px 12px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.15);
+
+    color: var(--color-muted);
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.card-status--accent {
+    color: var(--color-accent);
+
+    border-color:
+        rgba(215, 245, 0, 0.4);
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.empty-state {
+    margin-top: 20px;
+
+    padding: 14px 16px;
+
+    border:
+        1px dashed rgba(255, 255, 255, 0.18);
+
+    color: var(--color-muted);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   PROJECT PLACEHOLDER
+   Substitui imagens ainda não existentes
+   ========================================================= */
+
+.project-placeholder {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    aspect-ratio: 16 / 10;
+
+    padding: 25px;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    background-color: #0d0d0d;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.04) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.04) 1px,
+            transparent 1px
+        );
+
+    background-size: 24px 24px;
+}
+
+
+.project-placeholder-index {
+    color: var(--color-muted);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.project-placeholder-name {
+    color: transparent;
+
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 800;
+
+    letter-spacing: -0.05em;
+
+    -webkit-text-stroke: 1px var(--color-accent);
+    text-stroke: 1px var(--color-accent);
+}
+
+
+/* =========================================================
+   TECH CHIPS
+   ========================================================= */
+
+.tech-chips {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 24px;
+}
+
+
+.tech-chip {
+    padding: 8px 14px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.15);
+
+    color: var(--color-muted);
+
+    font-size: 12px;
+
+    transition:
+        color var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+
+.tech-chip:hover {
+    color: var(--color-accent);
+
+    border-color: var(--color-accent);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .page-header {
+        padding: 150px 6vw 70px;
+    }
+
+
+    .page-section {
+        padding: 90px 6vw;
+    }
+
+
+    .section-number {
+        left: 6vw;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .page-header {
+        padding: 130px 6vw 60px;
+    }
+
+
+    .page-section {
+        padding: 70px 6vw;
+    }
+
+
+    .section-number {
+        top: 105px;
+    }
+
+
+    .page-title {
+        font-size: clamp(44px, 13vw, 70px);
+    }
+
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
